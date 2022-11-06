@@ -1,3 +1,3 @@
-# lit-starter
+# blowapp
 
-Starting point for a lit project with rollup and web-dev-server.
+Application to manage and edit a collection of photos.

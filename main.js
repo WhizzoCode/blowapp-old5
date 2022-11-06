@@ -1,4 +1,4 @@
-import './src/the-app.js';
+import './src/blow-app.js';
 
-const app = document.createElement('the-app');
+const app = document.createElement('blow-app');
 document.body.appendChild(app);

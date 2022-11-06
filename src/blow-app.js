@@ -1,6 +1,6 @@
 import {LitElement, css, html} from 'lit';
 
-export class TheApp extends LitElement {
+export class BlowApp extends LitElement {
 
   constructor() {
     super();
@@ -14,10 +14,10 @@ export class TheApp extends LitElement {
 
   render() {
     return html`
-      <h1>lit-starter</h1>
+      <h1>BlowApp</h1>
     `;
   }
 
 }
 
-customElements.define('the-app', TheApp);
+customElements.define('blow-app', BlowApp);

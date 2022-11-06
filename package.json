@@ -1,25 +1,22 @@
 {
-  "name": "lit-starter",
-  "version": "1.1.0",
-  "description": "Starting point for a lit project with rollup and web-dev-server.",
+  "name": "blowapp",
+  "version": "1.0.0",
+  "description": "Application to manage and edit a collection of photos.",
   "keywords": [
-    "starter",
-    "scaffold",
-    "template",
-    "project",
-    "lit",
-    "web",
-    "dev",
-    "server",
-    "rollup"
+    "photo",
+    "photography",
+    "image",
+    "gallery",
+    "organizer",
+    "manipulation"
   ],
-  "homepage": "https://github.com/WhizzoCode/lit-starter#readme",
+  "homepage": "https://github.com/WhizzoCode/blowapp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WhizzoCode/lit-starter.git"
+    "url": "git+https://github.com/WhizzoCode/blowapp.git"
   },
   "bugs": {
-    "url": "https://github.com/WhizzoCode/lit-starter/issues"
+    "url": "https://github.com/WhizzoCode/blowapp/issues"
   },
   "author": {
     "name": "Sergio Martín",
