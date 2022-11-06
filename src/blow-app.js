@@ -1,4 +1,7 @@
 import {LitElement, css, html} from 'lit';
+import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
+import './blow-sidebar.js';
+import './blow-gallery.js';
 
 export class BlowApp extends LitElement {
 
@@ -8,13 +11,32 @@ export class BlowApp extends LitElement {
 
   static styles = css`
     :host {
-      color: tomato;
+      display: block;
+    }
+
+    sl-split-panel,
+    blow-sidebar,
+    blow-gallery {
+      height: 100%;
+    }
+
+    sl-split-panel {
+      --min: 200px;
+      --max: calc(100% - var(--min));
+    }
+
+    blow-sidebar,
+    blow-gallery {
+      overflow: scroll;
     }
   `;
 
   render() {
     return html`
-      <h1>BlowApp</h1>
+      <sl-split-panel position-in-pixels="200" primary="start">
+        <blow-sidebar slot="start"></blow-sidebar>
+        <blow-gallery slot="end"></blow-gallery>
+      </sl-split-panel>
     `;
   }
 
