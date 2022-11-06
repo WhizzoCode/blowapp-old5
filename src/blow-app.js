@@ -25,7 +25,6 @@ export class BlowApp extends LitElement {
       --max: calc(100% - var(--min));
     }
 
-    blow-sidebar,
     blow-gallery {
       overflow: scroll;
     }

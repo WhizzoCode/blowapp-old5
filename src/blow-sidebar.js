@@ -1,4 +1,5 @@
 import {LitElement, css, html} from 'lit';
+import './blow-panel.js';
 
 export class BlowSidebar extends LitElement {
 
@@ -11,11 +12,28 @@ export class BlowSidebar extends LitElement {
       display: block;
       background-color: var(--sl-color-neutral-50);
     }
+
+    sl-split-panel,
+    blow-panel {
+      height: 100%;
+    }
+
+    sl-split-panel {
+      --min: 100px;
+      --max: calc(100% - var(--min));
+    }
+
+    blow-panel {
+      overflow: scroll;
+    }
   `;
 
   render() {
     return html`
-      <p>Sidebar</p>
+      <sl-split-panel vertical position="50" snap="50%">
+        <blow-panel slot="start"></blow-panel>
+        <blow-panel slot="end"></blow-panel>
+      </sl-split-panel>
     `;
   }
 
