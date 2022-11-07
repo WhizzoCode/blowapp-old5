@@ -1,5 +1,6 @@
 import {LitElement, css, html} from 'lit';
-import './blow-panel.js';
+import './blow-panel-folders.js';
+import './blow-panel-filters.js';
 
 export class BlowSidebar extends LitElement {
 
@@ -23,8 +24,8 @@ export class BlowSidebar extends LitElement {
   render() {
     return html`
       <sl-split-panel vertical position="50" snap="50%">
-        <blow-panel slot="start"></blow-panel>
-        <blow-panel slot="end"></blow-panel>
+        <blow-panel-folders slot="start"></blow-panel-folders>
+        <blow-panel-filters slot="end"></blow-panel-filters>
       </sl-split-panel>
     `;
   }
