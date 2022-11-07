@@ -14,19 +14,15 @@ export class BlowApp extends LitElement {
       display: block;
     }
 
+    :host,
     sl-split-panel,
-    blow-sidebar,
-    blow-gallery {
+    sl-split-panel > * {
       height: 100%;
     }
 
     sl-split-panel {
       --min: 200px;
       --max: calc(100% - var(--min));
-    }
-
-    blow-gallery {
-      overflow: scroll;
     }
   `;
 

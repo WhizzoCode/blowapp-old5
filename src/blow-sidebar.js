@@ -13,18 +13,10 @@ export class BlowSidebar extends LitElement {
       background-color: var(--sl-color-neutral-50);
     }
 
-    sl-split-panel,
-    blow-panel {
-      height: 100%;
-    }
-
     sl-split-panel {
       --min: 100px;
       --max: calc(100% - var(--min));
-    }
-
-    blow-panel {
-      overflow: scroll;
+      height: 100%;
     }
   `;
 
