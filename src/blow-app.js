@@ -8,13 +8,25 @@ export class BlowApp extends LitElement {
 
   static styles = css`
     :host {
-      color: tomato;
+      height: 100%;
+      display: flex;
+    }
+
+    .panels {
+      background-color: var(--color-panel);
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    .main {
+      flex-grow: 1;
     }
   `;
 
   render() {
     return html`
-      <h1>BlowApp</h1>
+      <div class="panels">P</div>
+      <div class="main">M</div>
     `;
   }
 
