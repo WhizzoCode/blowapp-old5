@@ -8,7 +8,17 @@ export default {
     resolve(),
     copy({
       targets: [
-        { src: [ 'index.html', 'assets' ], dest: 'dist' }
+        {
+          src: [ 'index.html', 'assets' ],
+          dest: 'dist'
+        },
+        {
+          src: [
+            'node_modules/inter-ui/inter.css',
+            'node_modules/inter-ui/Inter (web)'
+          ],
+          dest: 'dist/node_modules/inter-ui/'
+        }
       ]
     })
   ]
