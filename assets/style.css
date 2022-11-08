@@ -1,8 +1,16 @@
 html {
+
   --color-back: hsl(0, 0%, 12%);
   --color-panel: hsl(0, 0%, 15%);
   --color-front: hsl(0, 0%, 80%);
-  font-family: 'Inter var', 'system-ui';
+
+  --font-size-xl: 1.25rem;
+  --font-size-lg: 1.125rem;
+  --font-size-md: 1rem;
+  --font-size-sm: .875rem;
+  --font-size-xs: .75rem;
+
+  font: 16px/1 'Inter var', 'system-ui';
   background-color: var(--color-back);
   color: var(--color-front);
 }
