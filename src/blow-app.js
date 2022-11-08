@@ -1,4 +1,5 @@
 import {LitElement, css, html} from 'lit';
+import './blow-panel.js';
 
 export class BlowApp extends LitElement {
 
@@ -25,8 +26,12 @@ export class BlowApp extends LitElement {
 
   render() {
     return html`
-      <div class="panels">P</div>
-      <div class="main">M</div>
+      <div class="panels">
+        <blow-panel title="Folders">
+          Content
+        </blow-panel>
+      </div>
+      <div class="main">Main</div>
     `;
   }
 
