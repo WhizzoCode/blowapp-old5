@@ -1,0 +1,8 @@
+html {
+  --color-back: hsl(0, 0%, 12%);
+  --color-panel: hsl(0, 0%, 15%);
+  --color-front: hsl(0, 0%, 80%);
+  font-family: 'Inter var', 'system-ui';
+  background-color: var(--color-back);
+  color: var(--color-front);
+}
