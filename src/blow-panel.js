@@ -3,27 +3,37 @@ import {LitElement, css, html} from 'lit';
 export class BlowPanel extends LitElement {
 
   static properties = {
-    title: {}
+    header: {}
   };
 
   constructor() {
     super();
-    this.title = 'Panel';
   }
 
   static styles = css`
     :host {
-      display: block
+      display: block;
     }
 
-    .title {
-      font-weight: 700;
+    header {
+      margin: 1em;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   `;
 
   render() {
+    let header;
+    if (this.header) {
+      header = html`<header>${ this.header.toUpperCase() }</header>`;
+    } else {
+      header = html``;
+    }
+
     return html`
-      <div class="title">${ this.title.toUpperCase() }</div>
+      ${ header }
       <slot></slot>
     `;
   }

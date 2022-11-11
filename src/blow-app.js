@@ -27,11 +27,14 @@ export class BlowApp extends LitElement {
   render() {
     return html`
       <div class="panels">
-        <blow-panel title="Folders">
+        <blow-panel header="Folders">
           Content
         </blow-panel>
       </div>
-      <div class="main">Main</div>
+
+      <div class="main">
+        Main
+      </div>
     `;
   }
 
