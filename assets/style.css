@@ -1,5 +1,4 @@
 html {
-
   --color-back: hsl(0, 0%, 12%);
   --color-panel: hsl(0, 0%, 15%);
   --color-front: hsl(0, 0%, 80%);
@@ -10,7 +9,7 @@ html {
   --font-size-sm: .875rem;
   --font-size-xs: .75rem;
 
-  font: 16px/1 'Inter var', 'system-ui';
+  font: 14px/1.6 'Inter var', 'system-ui';
   background-color: var(--color-back);
   color: var(--color-front);
 }
