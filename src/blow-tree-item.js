@@ -16,6 +16,12 @@ export class BlowTreeItem extends LitElement {
     this.level = 0;
   }
 
+  updated(changedProperties) {
+    if (changedProperties.has('level')) {
+      this.#updateChildrenLevels();
+    }
+  }
+
   static styles = css`
     :host {
       display: block;
@@ -99,7 +105,10 @@ export class BlowTreeItem extends LitElement {
     } else {
       this.#expandButton.classList.add('hidden');
     }
+    this.#updateChildrenLevels();
+  }
 
+  #updateChildrenLevels() {
     this.#children.forEach(element => {
       if (element.tagName === 'BLOW-TREE-ITEM') {
         element.level = this.level + 1;
