@@ -1,6 +1,7 @@
 html {
   --color-back: hsl(0, 0%, 12%);
   --color-panel: hsl(0, 0%, 15%);
+  --color-panel-selection: hsl(0, 0%, 22%);
   --color-front: hsl(0, 0%, 80%);
 
   --font-size-xl: 1.25rem;
