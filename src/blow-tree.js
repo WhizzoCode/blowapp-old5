@@ -6,9 +6,10 @@ export class BlowTree extends LitElement {
     super();
     this.addEventListener('selected', e => {
       this.querySelectorAll('blow-tree-item[selected]').forEach(element => {
-        element.attributes.removeNamedItem('selected');
+        if (element !== e.target) {
+          element.attributes.removeNamedItem('selected');
+        }
       });
-      e.target.selected = true;
     });
   }
 

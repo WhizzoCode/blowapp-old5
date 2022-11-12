@@ -93,6 +93,7 @@ export class BlowTreeItem extends LitElement {
   }
 
   #handleItemClick() {
+    this.selected = true;
     if (!!this.#children.length) {
       this.expanded = !this.expanded;
     }
