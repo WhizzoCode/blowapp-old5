@@ -67,7 +67,7 @@ export class BlowTreeItem extends LitElement {
           padding-left: ${ this.level }em;
         }
       </style>
-      <div class="item" @click=${ this.#handleClick }>
+      <div class="item" @click=${ this.#handleItemClick }>
         <div class="expand-button hidden">
           <!--heroicons: chevron-right-->
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none">
@@ -92,7 +92,7 @@ export class BlowTreeItem extends LitElement {
     return this.shadowRoot.querySelector('.expand-button');
   }
 
-  #handleClick() {
+  #handleItemClick() {
     if (!!this.#children.length) {
       this.expanded = !this.expanded;
     }
