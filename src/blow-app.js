@@ -1,7 +1,7 @@
 import {LitElement, css, html} from 'lit';
-import './blow-panel.js';
-import './blow-tree.js';
-import './blow-tree-item.js';
+import './blow-tk/blow-panel.js';
+import './blow-tk/blow-tree.js';
+import './blow-tk/blow-tree-item.js';
 
 export class BlowApp extends LitElement {
 
