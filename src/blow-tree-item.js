@@ -103,10 +103,10 @@ export class BlowTreeItem extends LitElement {
   #handleSlotchange() {
     if (!!this.#children.length) {
       this.#expandButton.classList.remove('hidden');
+      this.#updateChildrenLevels();
     } else {
       this.#expandButton.classList.add('hidden');
     }
-    this.#updateChildrenLevels();
   }
 
   #updateChildrenLevels() {
