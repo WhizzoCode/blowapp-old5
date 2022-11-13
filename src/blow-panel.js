@@ -16,7 +16,7 @@ export class BlowPanel extends LitElement {
     }
 
     header {
-      margin: 1em;
+      padding: 1em;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
