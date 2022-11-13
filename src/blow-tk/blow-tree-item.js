@@ -33,7 +33,7 @@ export class BlowTreeItem extends LitElement {
     }
 
     :host([selected]) .item {
-      background-color: var(--color-panel-selection);
+      background-color: var(--color-panel-action);
     }
 
     .item {
