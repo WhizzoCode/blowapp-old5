@@ -8,6 +8,7 @@ export class BlowPanel extends LitElement {
 
   constructor() {
     super();
+    this.header = '';
   }
 
   static styles = css`
@@ -15,8 +16,8 @@ export class BlowPanel extends LitElement {
       display: block;
     }
 
-    header {
-      padding: 1em;
+    .header {
+      padding: 0.5em 1em;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
@@ -27,14 +28,16 @@ export class BlowPanel extends LitElement {
   render() {
     let header;
     if (this.header) {
-      header = html`<header>${ this.header.toUpperCase() }</header>`;
+      header = html`<div class="header">${ this.header.toUpperCase() }</div>`;
     } else {
       header = html``;
     }
 
     return html`
       ${ header }
-      <slot></slot>
+      <div class="body">
+        <slot></slot>
+      </div>
     `;
   }
 
