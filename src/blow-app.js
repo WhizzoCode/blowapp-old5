@@ -1,5 +1,6 @@
 import {LitElement, css, html} from 'lit';
 import './blow-panel-folders.js';
+import './blow-panel-filters.js';
 
 export class BlowApp extends LitElement {
 
@@ -28,6 +29,7 @@ export class BlowApp extends LitElement {
     return html`
       <div class="panels">
         <blow-panel-folders></blow-panel-folders>
+        <blow-panel-filters></blow-panel-filters>
       </div>
       <div class="main"></div>
     `;
