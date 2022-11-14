@@ -16,8 +16,11 @@ export class BlowPanel extends LitElement {
       display: block;
     }
 
-    .header {
+    :host > * {
       padding: 0.5em 1em;
+    }
+
+    .header {
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
