@@ -50,7 +50,7 @@ export class BlowTreeItem extends LitElement {
       display: block;
       width: 1em;
       height: 1em;
-      margin-right: 0.25em;
+      margin: 0 0.25em;
     }
 
     .label {
